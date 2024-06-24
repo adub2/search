@@ -2,44 +2,84 @@ html {
   font-family: arial, sans-serif;
 }
 
+/* top nav bar */
 .menu {
   text-align: right;
-  padding: 20px;
+  padding: 20px 20px 0 0;
 }
 
 .menu > a {
-  padding: 5px;
-  font-size: large;
+  padding-left: 15px;
+  font-size: 13px;
+  color: #1f1f1f;
+  text-decoration: none;
 }
 
+.menu > a:hover {
+  text-decoration: underline;
+}
+
+/* div for spacing margin between menu and search */
+.spacer_div {
+  height: calc(100vh - 256px);
+  max-height: 256px;
+}
+
+/* logo */
+.logo_container {
+  text-align: center;
+  width: 272px;
+  height: 92px;
+  margin: 0 auto 26px auto;
+  position: relative;
+}
+
+.logo_container img {
+  height: 100%;
+  max-height: 100%;
+}
+
+/* images logo */
+.logo_container span {
+  color: #4285f4;
+  font: 16px / 16px roboto-regular, arial, sans-serif;
+  position: absolute;
+  left: 215px;
+  bottom: 0;
+  white-space: nowrap;
+}
+
+/* google search and images form */
 .search_form {
   display: flex;
   flex-direction: column;
   max-width: 584px;
   margin: auto;
-  padding: 200px 0;
 }
 
 .search_bar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .search_bar input {
   outline: none;
   font-size: 16px;
+  width: 100%;
   max-width: 584px;
   min-height: 48px;
   border: 1px solid #ddd;
   border-radius: 30px;
   padding-left: 50px;
-  margin: 30px 0;
 }
-.search_bar > input:hover {
+.search_bar > input:hover,
+input:focus {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: transparent;
 }
+
 .search_bar svg {
   width: 50px;
   position: relative;
@@ -58,7 +98,7 @@ html {
   color: #3c4043;
   font-family: Roboto, arial, sans-serif;
   font-size: 14px;
-  margin: 11px 4px;
+  margin: 0 4px;
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
@@ -68,12 +108,17 @@ html {
   user-select: none;
 }
 
+/* advanced form */
+.adv_header {
+  color: #d93025;
+  font-size: 20px;
+  margin: 25px 35px;
+}
 #advanced_form_container {
   max-width: 1140px;
   min-width: 200px;
   width: 96%;
-  margin: auto;
-  padding: 100px;
+  margin: 45px 0 0 35px;
 }
 
 .adv_input {

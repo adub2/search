@@ -14,14 +14,13 @@
     <div class="menu">
       <a href="index.html">Google Search</a>
     </div>
-
+    <div class="adv_header">
+      <label style="margin-left: 10px">Advanced Search</label>
+    </div>
+    <div style="border-bottom: 1px solid #ebebeb"></div>
     <div id="advanced_form_container" class="container">
-      <h4 class="mb-4">Find pages with...</h4>
-      <form
-        id="advanced_search_form"
-        action="https://www.google.com/search"
-        onsubmit="this.submit(); this.reset(); return false;"
-      >
+      <p style="margin-bottom: 25px; font-size: large">Find pages with...</p>
+      <form id="advanced_search_form" action="https://www.google.com/search">
         <div class="row g-3 align-items-center mb-3">
           <div class="col">
             <label id="allWordsLabel" for="allWords" class="col-form-label"
@@ -35,6 +34,7 @@
               class="adv_input"
               aria-describedby="allWordsLabel"
               autofocus="autofocus"
+              autocomplete="off"
               name="as_q"
             />
           </div>
@@ -51,6 +51,7 @@
               id="exactWords"
               class="adv_input"
               aria-describedby="exactWordsLabel"
+              autocomplete="off"
               name="as_epq"
             />
           </div>
@@ -67,6 +68,7 @@
               id="anyWords"
               class="adv_input"
               aria-describedby="anyWordsLabel"
+              autocomplete="off"
               name="as_oq"
             />
           </div>
@@ -83,6 +85,7 @@
               id="noneWords"
               class="adv_input"
               aria-describedby="noneWordsLabel"
+              autocomplete="off"
               name="as_eq"
             />
           </div>
@@ -103,6 +106,7 @@
                 id="numbersFrom"
                 class="adv_input"
                 aria-describedby="numbersFromLabel"
+                autocomplete="off"
                 name="as_nlo"
               />
             </div>
@@ -117,6 +121,7 @@
                 id="numbersTo"
                 class="adv_input"
                 aria-describedby="numbersToLabel"
+                autocomplete="off"
                 name="as_nhi"
               />
             </div>
